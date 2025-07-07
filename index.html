@@ -46,15 +46,16 @@
       var x = document.getElementById("cotizar-options");
       x.style.display = x.style.display === "none" ? "block" : "none";
     }
+
     function mostrarPrecios() {
-      alert("Planes disponibles:\\n\\n• Básico: $500\\n• Avanzado: $1200\\n• Empresarial: $1800");
+      alert("Planes disponibles:\n\n• Básico: $500\n• Avanzado: $1200\n• Empresarial: $1800");
     }
   </script>
 </head>
 <body>
   <div class="chatbox">
     <p>👋 ¡Hola! Soy el chatbot de PROBEP.</p>
-    <button class="btn" onclick="alert('Planes disponibles')">Ver planes</button>
+    <button class="btn" onclick="mostrarPrecios()">Ver planes</button>
     <button class="btn" onclick="toggleCotizar()">Cotizar bot</button>
     <div id="cotizar-options" class="sub-options">
       <button class="sub-btn" onclick="mostrarPrecios()">📄 Ver precios</button>
