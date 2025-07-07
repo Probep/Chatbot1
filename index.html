@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatBot PROBEP</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chatbox {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .btn, .sub-btn {
+      background-color: #34b7f1;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      margin: 10px 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .btn:hover, .sub-btn:hover {
+      background-color: #1e90ff;
+    }
+    .sub-options {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function toggleCotizar() {
+      var x = document.getElementById("cotizar-options");
+      x.style.display = x.style.display === "none" ? "block" : "none";
+    }
+    function mostrarPrecios() {
+      alert("Planes disponibles:\\n\\n• Básico: $500\\n• Avanzado: $1200\\n• Empresarial: $1800");
+    }
+  </script>
+</head>
+<body>
+  <div class="chatbox">
+    <p>👋 ¡Hola! Soy el chatbot de PROBEP.</p>
+    <button class="btn" onclick="alert('Planes disponibles')">Ver planes</button>
+    <button class="btn" onclick="toggleCotizar()">Cotizar bot</button>
+    <div id="cotizar-options" class="sub-options">
+      <button class="sub-btn" onclick="mostrarPrecios()">📄 Ver precios</button>
+      <a class="sub-btn" href="tel:+527771615534">📞 Llamada</a>
+      <a class="sub-btn" href="https://wa.me/5217771615534?text=Hola,%20quiero%20una%20cotización%20para%20un%20bot%20PROBEP." target="_blank">💬 WhatsApp</a>
+    </div>
+    <a class="btn" href="https://wa.me/5217771615534?text=Hola,%20quiero%20agendar%20una%20cita." target="_blank">Agendar cita</a>
+  </div>
+</body>
+</html>
