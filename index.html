@@ -34,7 +34,6 @@
 
     .message.bot {
       background-color: #f1f0f0;
-      text-align: left;
     }
 
     .message::after {
@@ -51,14 +50,16 @@
       margin-bottom: -10px;
     }
 
-    .btn, input {
-      font-size: 16px;
-      padding: 10px;
-      margin-top: 10px;
+    .btn, input, a.whatsapp-btn {
+      font-size: 18px;
+      padding: 12px;
+      margin-top: 12px;
       border-radius: 10px;
       border: none;
       width: 100%;
       box-sizing: border-box;
+      display: block;
+      text-align: center;
     }
 
     .btn {
@@ -78,6 +79,18 @@
 
     form {
       margin-top: 15px;
+    }
+
+    a.whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    a.whatsapp-btn:hover {
+      background-color: #1ebe5d;
     }
   </style>
   <script>
@@ -100,7 +113,7 @@
 
     <button class="btn" onclick="mostrarPlanes()"> Ver planes</button>
 
-    <a class="btn" href="https://wa.me/5217771615534?text=Hola,%20quiero%20agendar%20una%20videollamada%20para%20conocer%20el%20servicio%20PROBEP." target="_blank"> WhatsApp</a>
+    <a class="whatsapp-btn" href="https://wa.me/5217771615534?text=Hola,%20quiero%20agendar%20una%20videollamada%20para%20conocer%20el%20servicio%20PROBEP." target="_blank"> Contactar por WhatsApp</a>
   </div>
 </body>
 </html>
